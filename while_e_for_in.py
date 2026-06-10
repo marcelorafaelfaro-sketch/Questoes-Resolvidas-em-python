@@ -56,4 +56,4 @@ for a in range(1,7):
     print(f"\nConjunto [{a}]")
     for b in range(5):
         numero_aleatorio = random.randint(1,100)
-        print(f"O resultado é {numero_aleatorio}")
+        print(f"O resultado[{b+1}] é {numero_aleatorio}")
