@@ -24,7 +24,6 @@ if mes == 11:
    print("O mês é novembro")
 if mes == 12:
    print("O mês é dezembro")
-
-if mes != range(1,11):
+else:
      print("numero invalido")
 #nao descobri como corrigir o erro do print "numero invalido" ao final dos meses corretos(1 a 12)
