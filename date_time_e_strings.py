@@ -13,3 +13,7 @@ idade_marcelos = hoje - minha_data
 idade_silvia = hoje - silvia_data
 print(idade_marcelos)
 print(idade_silvia)
+string_qualquer = "Eu amo a silvia"
+print(string_qualquer[::-1])
+print(string_qualquer.replace("a","u"))
+print(string_qualquer.replace("amo","amu"))
