@@ -27,3 +27,4 @@ if resultado == 0 :
     print(f"O seu {n_par_ou_impar} é par")
 elif resultado != 0:
     print(f"Seu {n_par_ou_impar} é impar")
+
