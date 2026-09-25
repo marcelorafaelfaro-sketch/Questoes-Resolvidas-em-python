@@ -35,3 +35,4 @@ if numeros:
     print(f"Quantidade de pares: {qtd_pares}")
 else:
     print("Nenhum número positivo foi digitado.")
+#colocar no git

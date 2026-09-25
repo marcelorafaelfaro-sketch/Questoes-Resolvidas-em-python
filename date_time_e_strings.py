@@ -17,3 +17,4 @@ string_qualquer = "Eu amo a silvia"
 print(string_qualquer[::-1])
 print(string_qualquer.replace("a","u"))
 print(string_qualquer.replace("amo","amu"))
+print(string_qualquer[5:10])
