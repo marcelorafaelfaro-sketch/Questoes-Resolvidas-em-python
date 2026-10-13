@@ -35,13 +35,13 @@ print(f"A soma de todos os primos no intervalo é: {SOMAR_primos}")
 
 
 
-    # for i in range(100,200+1):
-    #     if numero % 2 == 0:
-    #         achar_primo += 1
-    #         print(achar_primo)
-    # if achar_primo == 2:
-    #     print("Esse numero é primo")
-    # else:
-    #     print("Nao é primo")
+for i in range(100,200+1):
+    if numero % 2 == 0:
+        achar_primo += 1
+        print(achar_primo)
+    if achar_primo == 2:
+        print("Esse numero é primo")
+    else:
+        print("Nao é primo")
 
 
