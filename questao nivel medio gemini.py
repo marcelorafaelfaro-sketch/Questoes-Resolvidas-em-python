@@ -34,12 +34,59 @@ Se a média for maior ou igual a $7.0$, exiba "Aprovado", senão exiba "Reprovad
 Peça para o usuário digitar $5$ números inteiros (um por um através de um laço).
 O programa deve descobrir e exibir no final qual foi o maior e qual foi o menor número digitado.
 """
-questao6 = 0
-for numeroquestao6 in range(1,6):
-    ngeral = int(input("Informe o numero: "))
-    if ngeral > ngeral:
-       questao6 += ngeral
-    print(questao6)
-# maior = max(ngeral)
-# menor = min(ngeral)
-print(f"O maior é ")
+# maior = 0
+# menor = 0
+# questao6 = 0
+# for numeroquestao6 in range(1,6):
+#     ngeral = float(input(f"Informe o {numeroquestao6} numero: ").replace(",", "."))
+#     #ngeral = float(input(f"Informe o {numeroquestao6} numero: ").replace(".",","))
+#     if ngeral == 1:
+#         maior = ngeral
+#         menor = ngeral
+#     else:
+#         if ngeral > maior:
+#             maior = ngeral
+#         if ngeral < menor:
+#             menor = ngeral
+#
+#
+# # maior = max(ngeral)
+# # menor = min(ngeral)
+# print(f"O maior é {maior}")
+# print(f"O menor é {menor}")
+
+"""
+7. Validação de Senha (Loop Indefinido)
+Crie um programa que defina uma senha correta guardada em uma variável (ex: senha_correta = "python123").
+O programa deve pedir a senha ao usuário continuamente usando o laço while.
+Enquanto ele errar a senha, exiba a mensagem "Senha incorreta, tente novamente!".
+Quando ele finalmente acertar, exiba "Acesso liberado!" e encerre o programa.
+"""
+# senha_questao_7 = "amosilvia"
+# while True:
+#     questao7 = str(input("Informe a senha: "))
+#     if questao7 == senha_questao_7:
+#         print("ACESSO LIBERADO.")
+#         break
+#     else:
+#         print("ACESSO NEGADO.")
+
+"""
+8. Caixa Eletrônico (Soma até parar)
+Crie um programa que leia vários números digitados pelo usuário até que ele digite o valor 0 (que serve como condição de parada).
+Enquanto o número for diferente de zero, vá acumulando o total. Quando o usuário digitar 0
+o programa deve encerrar o laço while e exibir a soma de todos os números digitados antes do zero.
+"""
+numeroquestao8 = 0
+termocarregado = 0
+while True:
+    numeroquestao8 = int(input("Informe o numero: "))
+    termocarregado += numeroquestao8
+    if numeroquestao8 == 0:
+        break
+
+print(termocarregado)
+
+
+
+
