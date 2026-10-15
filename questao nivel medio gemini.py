@@ -77,15 +77,45 @@ Crie um programa que leia vários números digitados pelo usuário até que ele 
 Enquanto o número for diferente de zero, vá acumulando o total. Quando o usuário digitar 0
 o programa deve encerrar o laço while e exibir a soma de todos os números digitados antes do zero.
 """
-numeroquestao8 = 0
-termocarregado = 0
-while True:
-    numeroquestao8 = int(input("Informe o numero: "))
-    termocarregado += numeroquestao8
-    if numeroquestao8 == 0:
-        break
+# numeroquestao8 = 0
+# termocarregado = 0
+# while True:
+#     numeroquestao8 = int(input("Informe o numero: "))
+#     termocarregado += numeroquestao8
+#     if numeroquestao8 == 0:
+#         break
+#
+# print(termocarregado)
 
-print(termocarregado)
+"""
+9. Lista de Compras sem Duplicatas
+Crie um programa que use um laço for para pedir ao usuário o nome de $5$ produtos de mercado.
+O programa deve guardar os produtos em uma lista Python,
+mas atenção: se o produto já existir na lista, não adicione novamente
+(avise "Produto já adicionado!"). No final, exiba a lista completa de compras na tela.
+"""
+
+# comprasdoJJ = []
+# for zeze in range(1,6):
+#     ascomprasdoJJ = input("Informe todos os produtos: ")
+#     comprasdoJJ.append(ascomprasdoJJ)
+#     #if ascomprasdoJJ == ascomprasdoJJ:
+#         #print("ESSE ITEM JA ESTA NO CARRINHO")
+# if ascomprasdoJJ == ascomprasdoJJ:
+#     print("ESSE ITEM JA ESTA NO CARRINHO")
+# print(comprasdoJJ)
+#---------------------------------versao gemini-----------
+comprasdoJJ = []
+
+for zeze in range(1, 6):
+    ascomprasdoJJ = input(f"Informe o produto {zeze}: ")
+
+    if ascomprasdoJJ in comprasdoJJ:
+        print("ESSE ITEM JÁ ESTÁ NO CARRINHO")
+    else:
+        comprasdoJJ.append(ascomprasdoJJ)
+
+print("Lista final:", comprasdoJJ)
 
 
 
