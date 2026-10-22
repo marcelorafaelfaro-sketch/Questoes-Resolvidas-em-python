@@ -1,0 +1,5 @@
+tupla = (1,2,5,6,7,1.4,1.3,3.5)
+print(sum(tupla))
+print(max(tupla))
+print(min(tupla))
+print(len(tupla))
