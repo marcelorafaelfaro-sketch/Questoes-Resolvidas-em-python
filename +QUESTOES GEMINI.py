@@ -43,17 +43,100 @@ caso contrário, exiba uma mensagem avisando que o produto não foi encontrado.
 
 
 """
-compras = []
-print("---COMPRAS---")
-print("INFORME 3 ITENS.")
-compras.append(input("Informe o item1: "))
-compras.append(input("Informe o item2: "))
-compras.append(input("Informe o item3: "))
-removedor = input("Qual item deseja remover? ")
-if removedor in compras:
-    compras.remove(removedor)
-    print("Item removido com sucesso")
-    print(compras)
-else:
-    print("NENHUM ITEM ENCONTRADO")
-#print(compras)
+# while True:
+#     compras = []
+#     print("---COMPRAS---")
+#     print("INFORME 3 ITENS.")
+#     compras.append(input("Informe o item1: "))
+#     compras.append(input("Informe o item2: "))
+#     compras.append(input("Informe o item3: "))
+#     removedor = input("Qual item deseja remover? ")
+#     if removedor in compras:
+#         compras.remove(removedor)
+#         print("Item removido com sucesso")
+#         print(compras)
+#     else:
+#         print("NENHUM ITEM ENCONTRADO")
+    #print(compras)
+
+"""
+Filtro de Pares e Ímpares (Listas)
+Objetivo: Preenchimento condicional de listas em laços.
+Peça ao usuário 10 números inteiros.
+Armazene os números pares em uma lista chamada pares
+e os ímpares em uma lista chamada impares
+Ao final, exiba o conteúdo de ambas as listas e o tamanho de cada uma usando len().
+"""
+#
+# pares = []
+# impares = []
+# print("Informe 10 valores inteiros.")
+# for quantidade in range(1,11):
+#     numero = int(input("Informe os numeros: "))
+#     if numero % 2 == 0:
+#         pares.append(numero)
+#     else:
+#         impares.append(numero)
+# print(pares)
+# print(impares)
+# print(len(pares))
+# print(len(impares))
+
+"""
+Registrador de Posições Geográficas (Tuplas)
+Objetivo: Criação, exibição e desempacotamento de tuplas
+Crie uma estrutura onde o usuário informa o nome de uma cidade
+a latitude e a longitude.Armazene a latitude e longitude em uma tupla coordenadas = (lat, lon)
+Ao final, exiba uma mensagem formatada
+extraindo os dados diretamente da tupla por desempacotamento.
+
+"""
+#
+# nome_cidade = input("Informe o nome da cidade: ")
+# lat = float(input("INFORME A LATITUDE: "))
+# lon = float(input("INFORME A LONGITUDE: "))
+# cordenadas = (lat, lon)
+# lat, lon = cordenadas
+# print(f"A cidade {nome_cidade} tem a latitude como {lat} e a longitude como {lon}")
+"""
+4.Analisador de Notas e Desempenho (Listas + Tuplas)
+Peça 4 notas de um aluno e guarde-as em uma lista.
+Crie uma função ou bloco de código que calcule o menor valor,
+o maior valor e a média das notas. Retorne esses três resultados agrupados dentro de uma única tupla
+(menor, maior, media) e exiba-os na tela.
+"""
+# notas_alunos = []
+# for vezes in range(1,5):
+#     nota = float(input("Informe a nota: "))
+#     notas_alunos.append(nota)
+#
+# print(notas_alunos)
+# minimo = min(notas_alunos)
+# print(f"Aqui está o minimo de suas notas: {minimo}")
+# maximo = max(notas_alunos)
+# print(f"Aqui está o maximo de suas notas: {maximo}")
+# media = sum(notas_alunos) / len(notas_alunos)
+# print(f"Aqui está a media de suas notas: {media}")
+# geral = (minimo, maximo, media)
+# minimo, maximo, media = geral
+# print(f"Aqui está seu geral {geral}")
+"""
+5. Relatório de Preços de Produtos (Lista de Tuplas)
+
+Crie uma lista contendo 4 tuplas, onde cada tupla possui a estrutura ("Nome do Produto", preco)
+Escreva um laço for que percorra essa lista e imprima um relatório formatado em colunas
+(ex.: Teclado ....... R$ 150.00), exibindo no final qual é o produto mais caro da lista.
+"""
+itens =[
+    ("Teclado",150),
+    ("Mouse",50),
+    ("Fone", 25),
+    ("Tripé", 75)
+
+]
+print(itens)
+print("Lista completa:")
+print(itens)
+print("\nFazendo a varredura:")
+for produtinhos, valor in itens:
+    print(f"O produto {produtinhos} custa R$ {valor},00")
